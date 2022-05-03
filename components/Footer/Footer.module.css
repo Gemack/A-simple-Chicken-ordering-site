@@ -1,0 +1,109 @@
+.container {
+  height: calc(100vh - 350px);
+  background: #222;
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.item:last-child {
+  flex: 2;
+  padding: 50px;
+  justify-content: space-between;
+}
+.card {
+  flex: 1;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: limegreen;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text {
+  color: lightgray;
+  font-size: 1.1rem;
+}
+.motto {
+  color: gainsboro;
+  font-size: 2rem;
+}
+
+.text2 {
+  margin: 1.5rem 0;
+  color: lightgray;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
